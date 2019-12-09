@@ -1,0 +1,14 @@
+<p>relic-list works!</p>
+<h1>{{title}}</h1>
+    <p>Relics</p>
+    <ul class="class-relic-list">
+        <li *ngFor="let relic of relics; let i = index">
+            <img (mouseover)="showRelic(i)" (mouseout)="hideRelic(i)" src="assets/relics/{{ relic.name }}.png" title="{{ relic.description }}" >
+            <div *ngIf="relic.counter" class="relic-counter">{{relic.counter}}</div>
+            <div class="relic-overlay" *ngIf="displayRelic[i]">
+                <img src="assets/tips/tipTop.png"><img src="assets/tips/tipMid.png"><img src="assets/tips/tipBot.png">
+                <div class="relic-description">{{ relic.description }}</div>
+            </div>
+        </li>
+    </ul>
+

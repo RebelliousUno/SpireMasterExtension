@@ -1,0 +1,59 @@
+
+ul {
+    &.class-relic-list {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        li {
+            position: relative;
+            width: 128px;
+            height: 128px;
+            float: left;
+            margin: 0;
+            padding: 0;
+        }
+    }
+}
+
+.relic-under{
+    padding: 0px;
+    margin: 0px;
+    z-index: 1;
+}
+
+.relic-outline {
+    position: relative;
+    float: top;
+    top: -129px;
+    z-index: -1;
+}
+
+.relic-overlay {
+    img {
+        float: left;
+        display: block;
+        z-index: 1;
+    }
+}
+
+.relic-counter {
+    float: left;
+    display: block;
+    color: gold;
+    position: absolute;
+    font-size: 250%;
+    font-weight: bolder;
+    left: 75px;
+    top: 65px;
+    z-index: 1;
+}
+
+.relic-description {
+    color: white;
+    font-size: 110%;
+    position: relative;
+    top: -85px;
+    left: 20px;
+    width: 320px;
+    z-index: 2;
+}
